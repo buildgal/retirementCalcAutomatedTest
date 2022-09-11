@@ -5,6 +5,7 @@ When(/^I enter current age/, async function () {
     
     await openRetirepg.currentAge.click();
     await openRetirepg.currentAge.setValue("45"); 
+    console.log('printed this'+ await openRetirepg.currentAge);
   });
 
 
@@ -62,20 +63,19 @@ When(/^I enter current age/, async function () {
 //adjust default values test 
 
 When(/^I select adjust default values link/, async function () {
-    
-  await openRetirepg.advLink.click();
-  await browser.pause(10000)
   
-
+  await openRetirepg.advLink.click();
+  //await browser.pause(1000);
+    
 });
 
 When(/^I change the default values/, async function () {
 
-  
+  await openRetirepg.addIncome.waitForExist({timeout:50000});
   await openRetirepg.addIncome.click();
-  await openRetirepg.addIncome.setValue("500");
+  console.log(openRetirepg.addIncome);
+  await openRetirepg.addIncome.setValue('500');
 
-/*
   await openRetirepg.retireDur.click();
   await openRetirepg.retireDur.setValue("20");
 
@@ -89,7 +89,13 @@ When(/^I change the default values/, async function () {
 
   await openRetirepg.postRoi.click();
   await openRetirepg.postRoi.setValue("5");
-  */
+
+  await openRetirepg.saveChgBtn.click();
+
+  await openRetirepg.calBtn.click();
+
+  await browser.pause(5000);
+
   //https://www.securian.com/insights-tools/retirement-calculator.html
 });
 
@@ -97,12 +103,6 @@ When(/^I select cancel to default values/, async function () {
   await browser.pause(3000);
   await browser.maximizeWindow(); 
   await openRetirepg.calBtn.click();
-
-});
-
-When(/^I change the default values/, async function () {
-    
-  await openRetirepg.saveChgBtn.click();
 
 });
 

@@ -68,13 +68,20 @@ get resultsTitle(){
 }
 
 get advLink(){
-  return $('#retirement-form > div:nth-child(7) > div:nth-child(1) > div > div > div > ul > li:nth-child(2) > a');
+  return $('#retirement-form > div:nth-child(7) > div:nth-child(1) > div > div > div > ul > li:nth-child(2) > a')
+    //'#retirement-form > div:nth-child(7) > div:nth-child(1) > div > div > div > ul > li:nth-child(2) > a');
 }
 
 //selectors for the modal titled default calculator values 
+/*get addIncome (){
+  return $('#additional-income');
+}
+*/
+
 get addIncome (){
   return $('#additional-income');
 }
+
 
 get retireDur (){
   return $('#retirement-duration');
