@@ -21,10 +21,10 @@ exports.config = {
     // will be called from there.
     //
     specs: [
-        //'./test/features/*.feature',
+        './test/features/*.feature',
         //'./test/features/SocialSecurityToggle.feature',
         //'./test/features/RequiredFields.feature',
-        './test/features/UpdateCalculator.feature'
+        //'./test/features/UpdateCalculator.feature'
 
 
 
