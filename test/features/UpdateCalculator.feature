@@ -1,4 +1,4 @@
-Feature: User should be able to update default calculator values
+Feature: Test the user should be able to update default calculator values
 
 Background: Open retirement calculator and enter required fields
     Given I open the retirement calculator 
