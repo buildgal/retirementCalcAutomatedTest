@@ -3,9 +3,10 @@ import openRetirepg from '../pagesObjects/openRetire.js';
 
 When(/^I enter current age/, async function () {
     
-    await openRetirepg.currentAge.click();
+    await browser.pause(3000);
+    //await openRetirepg.currentAge.click();
     await openRetirepg.currentAge.setValue("45"); 
-    console.log('printed this'+ await openRetirepg.currentAge);
+    
   });
 
 
@@ -65,44 +66,42 @@ When(/^I enter current age/, async function () {
 When(/^I select adjust default values link/, async function () {
   
   await openRetirepg.advLink.click();
-  //await browser.pause(1000);
     
 });
 
 When(/^I change the default values/, async function () {
 
-  await openRetirepg.addIncome.waitForExist({timeout:50000});
   await openRetirepg.addIncome.click();
-  console.log(openRetirepg.addIncome);
   await openRetirepg.addIncome.setValue('500');
 
   await openRetirepg.retireDur.click();
-  await openRetirepg.retireDur.setValue("20");
+  await openRetirepg.retireDur.setValue('20');
 
   await openRetirepg.incInfl.click();
+  await browser.pause(1000)
+  
+  await openRetirepg.expInRate.click();
+  await openRetirepg.expInRate.setValue('10');
+  
 
   await openRetirepg.finalInc.click();
-  await openRetirepg.finalInc.setValue("75");
+  await openRetirepg.finalInc.setValue('75');
 
   await openRetirepg.preRoi.click();
-  await openRetirepg.preRoi.setValue("8");
+  await openRetirepg.preRoi.setValue('8');
 
   await openRetirepg.postRoi.click();
-  await openRetirepg.postRoi.setValue("5");
+  await openRetirepg.postRoi.setValue('4');
 
-  await openRetirepg.saveChgBtn.click();
-
-  await openRetirepg.calBtn.click();
-
-  await browser.pause(5000);
-
-  //https://www.securian.com/insights-tools/retirement-calculator.html
 });
 
 When(/^I select cancel to default values/, async function () {
-  await browser.pause(3000);
-  await browser.maximizeWindow(); 
-  await openRetirepg.calBtn.click();
+  await browser.pause(3000); 
+  await openRetirepg.cancelBtn.click();
+});
 
+When(/^I select save changes to default values/, async function () {
+  await browser.pause(3000); 
+  await openRetirepg.saveChgBtn.click();
 });
 

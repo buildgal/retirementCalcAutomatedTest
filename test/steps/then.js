@@ -11,7 +11,7 @@ Then(/^I enter a social security override amount/, async function () {
 Then(/^I submit all required fields/, async function () {
  
   await openRetirepg.calBtn.click();
-    await browser.pause(3000);
+
 
   });
 
@@ -36,13 +36,16 @@ Then(/^I submit all required fields/, async function () {
   });
 
   Then(/^I record results scenario 1/, async function () {
-    
-    await openRetirepg.retireAmt
+    //await expect (openRetirepg.retireAmt).toHaveValue();
+
+    let retireResults1= await openRetirepg.retireAmt.getText();
+    console.log(retireResults1 + "your amount here");
+
+    let currResults1 = await openRetirepg.currSavResult.getText();
+    console.log(currResults1)
   
   });
   
-  Then(/^I record results scenario 2 and compare/, async function () {
-      
-    await openRetirepg.retireAmt
-  
-  });
+
+
+
