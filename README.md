@@ -5,7 +5,7 @@ This repository host automated test for the Securian Retirement Calculator. The 
 
   * [Acceptance_Criteria](#Acceptance_Criteria)
   * [Installation](#Installation)
-  * [How_To_Run_Test](#How to run test)
+  * [Execute_Test](#Execute_Test)
   * [Cucumber_Format](#Cucumber_Format)
   * [Badges](#Badges)
   * [Website](#Website)
@@ -22,7 +22,7 @@ This repository host automated test for the Securian Retirement Calculator. The 
 $npm i 
 ```
 
-## How to run test 
+## Execute_Test
 ```
 $npm run wdio 
 ```
