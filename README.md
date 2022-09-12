@@ -1,17 +1,17 @@
 # retirementCalcAutomatedTest
-This repository host the automated using Webdriver IO and Cucumber framework to test the Securian Retirement Calculator. Using the cucmber framework prioritzes the testing of behavior driven development. 
+This repository host automated test for the Securian Retirement Calculator. The framework is built using Webdriver IO and Cucumber. Using the cucmber framework prioritzes the testing of behavior driven development. 
 
  #### TABLE OF CONTENTS 
 
-  * [Acceptance_Criteria](#AcceptanceCriteria)
+  * [Acceptance_Criteria](#Acceptance_Criteria)
   * [Installation](#Installation)
-  * [How_To_Run_Test](#How)
-  * [Cucumber_Format](#Cucumber)
+  * [How_To_Run_Test](#How to run test)
+  * [Cucumber_Format](#Cucumber_Format)
   * [Badges](#Badges)
   * [Website](#Website)
 
 
-## Acceptence Criteria 
+## Acceptence_Criteria 
 * User should be able to submit form with all required fields filled in 
 * Additional Social Security fields should display/hide based on Social Security benefits toggle 
 * User should be able to submit form with all fields filled in 
@@ -43,5 +43,6 @@ Feature tested in are the following:
 ![Gherkin](https://img.shields.io/badge/gherkin-scripting%20syntax-green)
 
 
-## Website under test 
+## Website
+Here is the website under test. 
 https://www.securian.com/insights-tools/retirement-calculator.html
