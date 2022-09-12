@@ -5,10 +5,10 @@ This repository host the automated using Webdriver IO and Cucumber framework to 
 
   * [Acceptance_Criteria](#AcceptanceCriteria)
   * [Installation](#Installation)
-  * [How_To_Run_Test](#How to run test)
-  * [Cucumber_Format](#Cucumber_Format)
+  * [How_To_Run_Test](#How)
+  * [Cucumber_Format](#Cucumber)
   * [Badges](#Badges)
-    * [Badges](#Badges)
+  * [Website](#Website)
 
 
 ## Acceptence Criteria 
