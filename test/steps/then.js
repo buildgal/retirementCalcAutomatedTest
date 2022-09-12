@@ -31,21 +31,10 @@ Then(/^I submit all required fields/, async function () {
 
   Then(/^I receive results/, async function () {
     
-    await expect(openRetirepg.resultsTitle).toHaveText("Results");
+    await expect(openRetirepg.resultsTitle).toHaveTextContaining("Results");
   
   });
 
-  Then(/^I record results scenario 1/, async function () {
-    //await expect (openRetirepg.retireAmt).toHaveValue();
-
-    let retireResults1= await openRetirepg.retireAmt.getText();
-    console.log(retireResults1 + "your amount here");
-
-    let currResults1 = await openRetirepg.currSavResult.getText();
-    console.log(currResults1)
-  
-  });
-  
 
 
 

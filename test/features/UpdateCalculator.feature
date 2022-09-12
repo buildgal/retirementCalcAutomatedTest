@@ -15,6 +15,13 @@ Scenario: 1. As as user, I should be able to edit default values and cancel
     When I select cancel to default values
     Then I submit all required fields
     Then I receive results
-    Then I record results scenario 1
+
+Scenario: 2. As as user, I should be able to adjust default values save changes  
+    When I select adjust default values link 
+    When I change the default values
+    When I select save changes to default values
+    Then I submit all required fields
+    Then I receive results
+
 
 

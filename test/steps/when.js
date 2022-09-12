@@ -4,7 +4,6 @@ import openRetirepg from '../pagesObjects/openRetire.js';
 When(/^I enter current age/, async function () {
     
     await browser.pause(3000);
-    //await openRetirepg.currentAge.click();
     await openRetirepg.currentAge.setValue("45"); 
     
   });
@@ -66,6 +65,7 @@ When(/^I enter current age/, async function () {
 When(/^I select adjust default values link/, async function () {
   
   await openRetirepg.advLink.click();
+  await browser.pause(2000);
     
 });
 
